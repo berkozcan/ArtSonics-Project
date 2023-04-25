@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Artsonics Images with Audio</title>
+</head>
+<body>
+	<h1>Artsonics Images with Audio</h1>
+	<div>
+		<img id="image1" src="img1/ac1.jpg" alt="Artsonics Image 1" onclick="playAudio('audio1')">
+		<audio id="audio1" src="audio1.mp3"></audio>
+	</div>
+	<div>
+		<img id="image2" src="img1/ac2.jpg" alt="Artsonics Image 2" onclick="playAudio('audio2')">
+		<audio id="audio2" src="audio2.mp3"></audio>
+	</div>
+	<div>
+		<img id="image3" src="img1/ac3.jpg" alt="Artsonics Image 3" onclick="playAudio('audio3')">
+		<audio id="audio3" src="audio3.mp3"></audio>
+	</div>
+
+  <source src="concert.ogg" type="audio/ogg">
+  <source src="concert.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+	<script>
+		function playAudio(id) {
+			var audio = document.getElementById(id);
+			audio.play();
+		}
+	</script>
+</body>
+</html>
